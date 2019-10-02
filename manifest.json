@@ -1,0 +1,24 @@
+{
+  "name": "Simple Greeting Dashboard",
+  "version": "1.0",
+  "description": "This Chrome extension greets the user each time they open a new tab",
+  "manifest_version": 2,
+  "incognito": "split",
+"chrome_url_overrides": {
+    "newtab": "index.html"
+ },
+   "permissions": [
+     "activeTab"
+	 ],
+  "icons": {
+    "128": "icon.png"
+    }
+ }
+
+
+
+
+//"split" will allow the extension to run in its own process when the browser is incognito//
+// chrome_url_overrides => tells chrome to open index.html whenever a new tab is opened
+//The value of "permissions" will give the user a pop-up letting them know that this extension will override their new tab when they try to install it
+//we’re telling Chrome what to display as our favicon: a file called icon.png, which will be 128 x 128 pixels

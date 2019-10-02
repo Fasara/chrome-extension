@@ -1,0 +1,21 @@
+.settings {
+display: flex;
+flex-direction: row;
+align-content: center;
+}
+
+button {
+width: 100px;
+height: 40px;
+border-radius: 18px;
+background-color: purple;
+color: white;
+font-size: 13px;
+}
+
+input {
+	padding: 5px;
+	font-size: 12px;
+	width: 150px;
+	height: 20px;
+}
